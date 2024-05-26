@@ -1,98 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/styles.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./IMAGENES/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./IMAGENES/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./IMAGENES/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="./IMAGENES/favicon_io/site.webmanifest">
-<title>Delicioso Resto</title>
-  </head>
-  <body>
 
-    <header class="header">
-      <div class="header_grid_layout"> 
-        <div class="div_header_logo">
-            <a href="#"><img src="IMAGENES/logoNombreCompleto.png" alt="Delicioso Resto"/></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./IMAGENES/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./IMAGENES/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./IMAGENES/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./IMAGENES/favicon_io/site.webmanifest">
+  <title>Delicioso Resto</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header_grid_layout">
+      <div class="div_header_logo">
+        <a href="#"><img src="IMAGENES/logoNombreCompleto.png" alt="Delicioso Resto" /></a>
+      </div>
+      <input type="checkbox" id="side_menu" class="side_menu" />
+      <label for="side_menu" class="hamb"><span class="hamb_line"></span></label>
+      <nav class="menu_nav">
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#promociones">Promociones</a></li>
+          <li><a href="#carta">Carta</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h2>Bienvenido a nuestro restaurante</h2>
+      <p>¡Bienvenidos a Delicioso!
+
+        En Delicioso, celebramos la rica herencia culinaria de Argentina, un país famoso por su carne de primera
+        calidad, vinos excepcionales y pasión por la buena mesa. Desde el corazón de Buenos Aires hasta la Patagonia,
+        nuestra misión es traer a tu mesa los sabores auténticos y vibrantes de nuestra tierra.
+
+        <h3>Nuestra Historia</h3>
+        Delicioso nació del sueño de compartir con el mundo la auténtica cocina argentina. Fundado en 1985
+        por su dueño, nuestro restaurante se ha convertido en un rincón donde se encuentran la tradición y
+        la innovación. Con raíces en la cocina familiar y recetas transmitidas de generación en generación, hemos creado
+        un espacio donde cada plato cuenta una historia y cada bocado es una experiencia.</p>
+    </section>
+
+    <section id="promociones">
+      <h2>Promociones</h2>
+      <!-- Contenido de la sección de promociones -->
+      <!-- Poner carrusel -->
+    </section>
+
+    <section id="carta">
+      <h2>Nuestra Carta</h2>
+      <p>Aquí puedes ver nuestros platos deliciosos.</p>
+      <div class="gallery">
+        <div class="image">
+          <img src="imagenes/imagen1.jpg" alt="Plato 1">
+          <div class="overlay">Plato 1</div>
         </div>
-          <input type="checkbox" id="side_menu" class="side_menu" />
-          <label for="side_menu" class="hamb"><span class="hamb_line"></span></label>
-          <nav class="menu_nav">
-            <ul class="menu">
-              <li><a href="#inicio">Inicio</a></li>
-              <li><a href="#promociones">Promociones</a></li>
-              <li><a href="#carta">Carta</a></li>
-              <li><a href="#reservas">Reservas</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-            </ul>
-          </nav>
+        <div class="image">
+          <img src="imagenes/imagen2.jfif" alt="Plato 2">
+          <div class="overlay">Plato 2</div>
         </div>
-    </header>
-
-    <main>
-      <section id="inicio">
-        <h2>Bienvenido a nuestro restaurante</h2>
-        <p>¡Disfruta de nuestra deliciosa comida!</p>
-      </section>
-
-      <section id="promociones">
-        <h2>Promociones</h2>
-        <!-- Contenido de la sección de promociones -->
-        <!-- Poner carrusel -->
-      </section> 
-
-      <section id="carta">
-        <h2>Nuestra Carta</h2>
-        <p>Aquí puedes ver nuestros platos deliciosos.</p>
-        <div class="gallery">
-          <div class="image">
-            <img src="imagenes/imagen1.jpg" alt="Plato 1">
-            <div class="overlay">Plato 1</div>
-          </div>
-          <div class="image">
-            <img src="imagenes/imagen2.jfif" alt="Plato 2">
-            <div class="overlay">Plato 2</div>
-          </div>
-          <div class="image">
-            <img src="imagenes/imagen3.jfif" alt="Plato 3">
-            <div class="overlay">Plato 2</div>
-          </div>
-          <!-- Agrega más imágenes aquí -->
+        <div class="image">
+          <img src="imagenes/imagen3.jfif" alt="Plato 3">
+          <div class="overlay">Plato 2</div>
         </div>
-      </section>
+        <!-- Agrega más imágenes aquí -->
+      </div>
+    </section>
 
-      <section id="reservas">
-        <h2>Reserva una mesa</h2>
-        <p>Por favor, completa el siguiente formulario para reservar una mesa.</p>
-        <form action="enviar_reserva.php" method="POST">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required><br><br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required><br><br>
-          <label for="fecha">Fecha:</label>
-          <input type="date" id="fecha" name="fecha" required><br><br>
-          <label for="personas">Número de personas:</label>
-          <input type="number" id="personas" name="personas" required><br><br>
-          <input type="submit" value="Enviar reserva">
-        </form>
-      </section>
+    <section id="reservas">
+      <h2>Reserva una mesa</h2>
+      <p>Por favor, completa el siguiente formulario para reservar una mesa.</p>
+      <form action="enviar_reserva.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+        <label for="personas">Número de personas:</label>
+        <input type="number" id="personas" name="personas" required><br><br>
+        <input type="submit" value="Enviar reserva">
+      </form>
+    </section>
 
-      <section id="contacto">
-        <h2>Contáctanos</h2>
-        <p>¡Estamos aquí para ayudarte!</p>
-        <p>Puedes contactarnos en:</p>
-        <p>Teléfono: 123-456-789</p>
-        <p>Email: info@restaurantedelicioso.com</p>
-      </section>
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <p>¡Estamos aquí para ayudarte!</p>
+      <p>Puedes contactarnos en:</p>
+      <p>Teléfono: 123-456-789</p>
+      <p>Email: info@restaurantedelicioso.com</p>
+    </section>
 
-    </main>
+  </main>
 
-    <footer>
-      <p>&copy; 2024 Restaurante delicioso. Todos los derechos reservados.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2024 Restaurante delicioso. Todos los derechos reservados.</p>
+  </footer>
 
 
-  </body>
+</body>
+
 </html>
