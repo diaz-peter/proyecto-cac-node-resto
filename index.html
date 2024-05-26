@@ -35,69 +35,117 @@
 
   <main>
     <section id="inicio">
-      <h2>Bienvenido a nuestro restaurante</h2>
-      <p>¡Bienvenidos a Delicioso!
+      <h2>¡Bienvenidos a Delicioso!</h2>
+      <p>
 
         En Delicioso, celebramos la rica herencia culinaria de Argentina, un país famoso por su carne de primera
         calidad, vinos excepcionales y pasión por la buena mesa. Desde el corazón de Buenos Aires hasta la Patagonia,
         nuestra misión es traer a tu mesa los sabores auténticos y vibrantes de nuestra tierra.
 
-        <h3>Nuestra Historia</h3>
-        Delicioso nació del sueño de compartir con el mundo la auténtica cocina argentina. Fundado en 1985
-        por su dueño, nuestro restaurante se ha convertido en un rincón donde se encuentran la tradición y
-        la innovación. Con raíces en la cocina familiar y recetas transmitidas de generación en generación, hemos creado
-        un espacio donde cada plato cuenta una historia y cada bocado es una experiencia.</p>
-    </section>
+      <h2>Nuestra Historia</h2>
+      Delicioso nació del sueño de compartir con el mundo la auténtica cocina argentina. Fundado en 1985
+      por su dueño, nuestro restaurante se ha convertido en un rincón donde se encuentran la tradición y
+      la innovación. Con raíces en la cocina familiar y recetas transmitidas de generación en generación, hemos creado
+      un espacio donde cada plato cuenta una historia y cada bocado es una experiencia.</p>
 
-    <section id="promociones">
-      <h2>Promociones</h2>
-      <!-- Contenido de la sección de promociones -->
-      <!-- Poner carrusel -->
-    </section>
 
-    <section id="carta">
-      <h2>Nuestra Carta</h2>
-      <p>Aquí puedes ver nuestros platos deliciosos.</p>
-      <div class="gallery">
-        <div class="image">
-          <img src="imagenes/imagen1.jpg" alt="Plato 1">
-          <div class="overlay">Plato 1</div>
+      <section id="promociones">
+        <!-- Contenido de la sección de promociones -->
+        <!-- Poner carrusel -->
+        <section id="promociones">
+          <h2>Promociones</h2>
+          <div class="carousel">
+            <div class="slide" id="slide1">
+              <img src="IMAGENES/promocion1.jfif" alt="Promoción 1">
+              <div class="caption">
+                <h3>¡Desayuno Argentino!</h3>
+                <p>Comienza tu día con energía con nuestro desayuno argentino: café, medialunas y jugo de naranja por
+                  solo
+                  $5.</p>
+              </div>
+            </div>
+            <div class="slide" id="slide2">
+              <img src="IMAGENES/promocion2.jfif" alt="Promoción 2">
+              <div class="caption">
+                <h3>¡Happy Hour de Carnes!</h3>
+                <p>Disfruta de nuestras exquisitas carnes a mitad de precio durante nuestro Happy Hour de 5 pm a 7 pm.
+                </p>
+              </div>
+            </div>
+            <div class="slide" id="slide3">
+              <img src="IMAGENES/promocion3.jfif" alt="Promoción 3">
+              <div class="caption">
+                <h3>Menú Parrillada para Dos</h3>
+                <p>¡Ven con tu pareja y disfruta de una parrillada completa para dos personas por solo $40! Incluye
+                  cortes
+                  de carne, chorizo, morcilla y acompañamientos.</p>
+              </div>
+            </div>
+            <div class="slide" id="slide4">
+              <img src="IMAGENES/promocion4.jfif" alt="Promoción 4">
+              <div class="caption">
+                <h3>Noche de Milanesas</h3>
+                <p>¡Los miércoles son de milanesas! Disfruta de una variedad de milanesas argentinas con papas fritas y
+                  ensalada por solo $10.</p>
+              </div>
+            </div>
+            <div class="slide" id="slide5">
+              <img src="IMAGENES/promocion5.jfif" alt="Promoción 5">
+              <div class="caption">
+                <h3>Brunch Domingo</h3>
+                <p>Disfruta de nuestro brunch dominical con una selección de panqueques, huevos revueltos, bacon, frutas
+                  frescas y mimosa ilimitada por solo $20.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+
+      </section>
+
+      <section id="carta">
+        <h2>Nuestra Carta</h2>
+        <p>Aquí puedes ver nuestros platos deliciosos.</p>
+        <div class="gallery">
+          <div class="image">
+            <img src="imagenes/imagen1.jpg" alt="Plato 1">
+            <div class="overlay">Plato 1</div>
+          </div>
+          <div class="image">
+            <img src="imagenes/imagen2.jfif" alt="Plato 2">
+            <div class="overlay">Plato 2</div>
+          </div>
+          <div class="image">
+            <img src="imagenes/imagen3.jfif" alt="Plato 3">
+            <div class="overlay">Plato 2</div>
+          </div>
+          <!-- Agrega más imágenes aquí -->
         </div>
-        <div class="image">
-          <img src="imagenes/imagen2.jfif" alt="Plato 2">
-          <div class="overlay">Plato 2</div>
-        </div>
-        <div class="image">
-          <img src="imagenes/imagen3.jfif" alt="Plato 3">
-          <div class="overlay">Plato 2</div>
-        </div>
-        <!-- Agrega más imágenes aquí -->
-      </div>
-    </section>
+      </section>
 
-    <section id="reservas">
-      <h2>Reserva una mesa</h2>
-      <p>Por favor, completa el siguiente formulario para reservar una mesa.</p>
-      <form action="enviar_reserva.php" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="fecha">Fecha:</label>
-        <input type="date" id="fecha" name="fecha" required><br><br>
-        <label for="personas">Número de personas:</label>
-        <input type="number" id="personas" name="personas" required><br><br>
-        <input type="submit" value="Enviar reserva">
-      </form>
-    </section>
+      <section id="reservas">
+        <h2>Reserva una mesa</h2>
+        <p>Por favor, completa el siguiente formulario para reservar una mesa.</p>
+        <form action="enviar_reserva.php" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha" required><br><br>
+          <label for="personas">Número de personas:</label>
+          <input type="number" id="personas" name="personas" required><br><br>
+          <input type="submit" value="Enviar reserva">
+        </form>
+      </section>
 
-    <section id="contacto">
-      <h2>Contáctanos</h2>
-      <p>¡Estamos aquí para ayudarte!</p>
-      <p>Puedes contactarnos en:</p>
-      <p>Teléfono: 123-456-789</p>
-      <p>Email: info@restaurantedelicioso.com</p>
-    </section>
+      <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>¡Estamos aquí para ayudarte!</p>
+        <p>Puedes contactarnos en:</p>
+        <p>Teléfono: 123-456-789</p>
+        <p>Email: info@restaurantedelicioso.com</p>
+      </section>
 
   </main>
 
