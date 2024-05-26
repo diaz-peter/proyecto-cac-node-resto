@@ -25,7 +25,10 @@ Proyecto creado con las tecnologias HTML, CSS y Javascript.
 ## Contacto
 
 - Proyecto desarrollado por Peter Diaz y Hugo Castroman. 
-- Email: dpeter999@gmail.com
+- Email: dpeter999@gmail.com hcastroman@gmail.com
 - LinkedIn: [Peter Diaz](https://www.linkedin.com/in/diaz-peter/)
+- LinkedIn: [Hugo Castroman](https://www.linkedin.com/in/hugo-ariel-castroman/)
+
+
 
 
