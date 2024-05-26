@@ -16,7 +16,6 @@ Proyecto creado con las tecnologias HTML, CSS y Javascript.
 ## Demostración
 
 - Puedes encontrar una demostración en vivo del proyecto [aquí](https://diaz-peter.github.io/proyecto-cac-node-resto/).
-<img align="center" title="gif_animado" alt="gif_animado" src="https://github.com/github-peter-diaz/github-peter-diaz/blob/main/imagenes/Gif-Peter.gif">
 
 ## Instalación
 
