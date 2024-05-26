@@ -17,6 +17,16 @@ Proyecto creado con las tecnologias HTML, CSS y Javascript.
 
 - Puedes encontrar una demostración en vivo del proyecto [aquí](https://diaz-peter.github.io/proyecto-cac-node-resto/).
 
+<img align="center" title="img1" alt="img1" src="https://github.com/diaz-peter/proyecto-cac-node-resto/blob/main/IMAGENES/img1.png">
+
+<img align="center" title="img2" alt="img2" src="https://github.com/diaz-peter/proyecto-cac-node-resto/blob/main/IMAGENES/img2.png">
+
+<img align="center" title="img3" alt="img3" src="https://github.com/diaz-peter/proyecto-cac-node-resto/blob/main/IMAGENES/img3.png">
+
+<img align="center" title="img4" alt="img4" src="https://github.com/diaz-peter/proyecto-cac-node-resto/blob/main/IMAGENES/img4.png">
+
+<img align="center" title="img5" alt="img5" src="https://github.com/diaz-peter/proyecto-cac-node-resto/blob/main/IMAGENES/img5.png">
+
 ## Instalación
 
 1. Clona este repositorio: `git clone https://github.com/diaz-peter/proyecto-cac-node-resto.git`
