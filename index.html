@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 
@@ -210,3 +211,151 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="IMAGENES/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="IMAGENES/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="IMAGENES/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="IMAGENES/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<title>Delicioso Resto</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header_grid_layout"> 
+        <div class="div_header_logo">
+            <a href="#"><img src="IMAGENES/logoNombreCompleto.png" alt="Delicioso Resto"/></a>
+        </div>
+        <div class="div_redes">
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=54123456789"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+          <input type="checkbox" id="side_menu" class="side_menu" />
+          <label for="side_menu" class="hamb"><span class="hamb_line"></span></label>
+          <nav class="menu_nav">
+            <ul class="menu">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#promociones">Promociones</a></li>
+              <li><a href="#carta">Carta</a></li>
+              <li><a href="#reservas">Reservas</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio">
+        <h2>Bienvenido a nuestro restaurante</h2>
+        <p>¡Disfruta de nuestra deliciosa comida!</p>
+      </section>
+
+      <section id="promociones">
+        <h2>Promociones</h2>
+        <!-- Contenido de la sección de promociones -->
+        <!-- Poner carrusel -->
+      </section> 
+
+      <section id="carta">
+        <h2>Nuestra Carta</h2>
+        <p>Aquí puedes ver nuestros platos deliciosos.</p>
+        <div class="gallery">
+          <div class="image">
+            <img src="imagenes/imagen1.jpg" alt="Plato 1">
+            <div class="overlay">Plato 1</div>
+          </div>
+          <div class="image">
+            <img src="imagenes/imagen2.jfif" alt="Plato 2">
+            <div class="overlay">Plato 2</div>
+          </div>
+          <div class="image">
+            <img src="imagenes/imagen3.jfif" alt="Plato 3">
+            <div class="overlay">Plato 2</div>
+          </div>
+          <!-- Agrega más imágenes aquí -->
+        </div>
+      </section>
+
+      
+      <section id="reservas">
+        <h2>Reserva una mesa</h2>
+        <p>Por favor, completa el siguiente formulario para reservar una mesa.</p>
+        <form action="" class="form" method="post" id="form" novalidate>
+          <h2 class="form_title"> ¿Como podemos ayudarte?</h2>
+          <div class="form_container">
+            <div class="form_group">
+              <input type="text" name="" id="name" class="form_input" placeholder=" ">
+              <label for="name" class="form_label"> Nombre</label>
+              <span class="for_line"></span>
+            </div>
+
+            <div class="form_group">
+              <input type="email" name="" id="email" class="form_input" placeholder=" ">
+              <label for="user" class="form_label"> Correo Electronico</label>
+              <span class="for_line"></span>
+            </div>
+
+            <div class="form_group">
+              <input type="text" name="" id="mesagge" class="form_input" placeholder=" ">
+              <label for="user" class="form_label"> Mensaje</label>
+              <span class="for_line"></span>
+            </div>
+
+            <div class="form_group">
+              <input type="text" name="" id="phone" class="form_input" placeholder=" ">
+              <label for="password" class="form_label"> Telefono</label>
+              <span class="for_line"></span>
+            </div>
+
+            <label for="personas">Número de comensales:</label>
+            <select id="personas" name="personas" required>
+                <option value="">Selecciona...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select><br><br>
+
+            <label>¿Es cena o almuerzo?</label><br>
+            <input type="radio" id="almuerzo" name="tipo" value="Almuerzo" required>
+            <label for="almuerzo">Almuerzo</label><br>
+            <input type="radio" id="cena" name="tipo" value="Cena" required>
+            <label for="cena">Cena</label><br><br>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required><br><br>
+
+            <input type="submit" class="form_submit" value="RESERVAR">
+            <p class="warnings" id="warnings"></p>
+        </form>
+      </section>
+
+      <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>¡Estamos aquí para ayudarte!</p>
+        <p>Puedes contactarnos en:</p>
+        <p>Teléfono: 123-456-789</p>
+        <p>Email: info@restaurantedelicioso.com</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Restaurante delicioso. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="JS/validaciones.js"></script>
+
+  </body>
+</html>
+>>>>>>> rama-hugo
