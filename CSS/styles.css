@@ -53,6 +53,10 @@ ul {
   border-bottom-right-radius: 7px;
 }
 
+.div_redes {
+    display: none;
+  }
+
 .div_header_logo {
   grid-area: nombre;
   height: 100%;
@@ -161,8 +165,16 @@ ul {
 
 /* Carrusel de Promociones */
 #promociones {
-  text-align: center;
+  text-align: left;
 }
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 
 .carousel {
   display: flex;
@@ -207,6 +219,27 @@ ul {
   margin-bottom: 0;
 }
 
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+
 /* Fin Carrusel de Promociones */
 
 
@@ -218,10 +251,10 @@ footer {
 }
 
 
-section {
-  top: 20px;
-  padding: 20px;
-}
+section[id] {
+    scroll-margin-top: 30px;
+    padding: 20px;
+  }
 
 .gallery {
   display: grid;
@@ -319,15 +352,35 @@ section {
 /* Escritorio */
 @media (min-width: 768px) {
 
-  .header_grid_layout {
-    height: 140px;
-    display: grid;
-    grid-template-areas:
-      "nombre"
-      "menu_pc";
-    grid-template-columns: 100%;
-    grid-template-rows: 70% 30%;
-  }
+    .header_grid_layout {
+        height: 140px;
+        display: grid;
+        grid-template-areas:
+          "nombre redes"
+          "menu_pc menu_pc";
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 70% 30%;
+      }
+       
+      .div_redes {
+        display: flex;
+        grid-area: redes;
+        justify-content: right;
+      }
+
+      .div_redes i {
+        font-size: 30px;
+        color: black;
+        border-radius: 50%;
+        padding: 15px;
+        box-shadow: 0px 5px 10px rgb(0, 0, 0, .35);
+        transition: .3s ease;
+ 
+      }
+
+      .div_redes a {
+        padding: 10px;
+      }
 
   .div_menu_hamb {
     display: none;
@@ -360,5 +413,9 @@ section {
 
   .hamb {
     display: none;
+  }
+
+  section[id] {
+    scroll-margin-top: 120px;
   }
 }
