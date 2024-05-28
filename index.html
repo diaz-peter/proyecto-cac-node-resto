@@ -1,63 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./IMAGENES/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./IMAGENES/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./IMAGENES/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./IMAGENES/favicon_io/site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Delicioso Resto</title>
+</head>
+
 <body>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/styles.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./IMAGENES/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./IMAGENES/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./IMAGENES/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="./IMAGENES/favicon_io/site.webmanifest">
-    <title>Delicioso Resto</title>
-  </head>
-
-  <body>
-
-    <header class="header">
-      <div class="header_grid_layout">
-        <div class="div_header_logo">
-          <a href="#"><img src="IMAGENES/logoNombreCompleto.png" alt="Delicioso Resto" /></a>
-        </div>
-        <div class="div_redes">
-          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://api.whatsapp.com/send?phone=54123456789"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-        <input type="checkbox" id="side_menu" class="side_menu" />
-        <label for="side_menu" class="hamb"><span class="hamb_line"></span></label>
-        <nav class="menu_nav">
-          <ul class="menu">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#promociones">Promociones</a></li>
-            <li><a href="#carta">Carta</a></li>
-            <li><a href="#reservas">Reservas</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </nav>
+  <header class="header">
+    <div class="header_grid_layout">
+      <div class="div_header_logo">
+        <a href="#"><img src="IMAGENES/logoNombreCompleto.png" alt="Delicioso Resto" /></a>
       </div>
-    </header>
+      <div class="div_redes">
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=54123456789"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <input type="checkbox" id="side_menu" class="side_menu" />
+      <label for="side_menu" class="hamb"><span class="hamb_line"></span></label>
+      <nav class="menu_nav">
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#promociones">Promociones</a></li>
+          <li><a href="#carta">Carta</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-      <section id="inicio">
-        <h2>¡Bienvenidos a Delicioso!</h2>
-        <p>
+  <main>
+    <section id="inicio">
+      <h2>¡Bienvenidos a Delicioso!</h2>
+      <p>
 
-          En Delicioso, celebramos la rica herencia culinaria de Argentina, un país famoso por su carne de primera
-          calidad, vinos excepcionales y pasión por la buena mesa. Desde el corazón de Buenos Aires hasta la Patagonia,
-          nuestra misión es traer a tu mesa los sabores auténticos y vibrantes de nuestra tierra.
+        En Delicioso, celebramos la rica herencia culinaria de Argentina, un país famoso por su carne de primera
+        calidad, vinos excepcionales y pasión por la buena mesa. Desde el corazón de Buenos Aires hasta la Patagonia,
+        nuestra misión es traer a tu mesa los sabores auténticos y vibrantes de nuestra tierra.
 
-        <h2>Nuestra Historia</h2>
-        Delicioso nació del sueño de compartir con el mundo la auténtica cocina argentina. Fundado en 1985
-        por su dueño, nuestro restaurante se ha convertido en un rincón donde se encuentran la tradición y
-        la innovación. Con raíces en la cocina familiar y recetas transmitidas de generación en generación, hemos creado
-        un espacio donde cada plato cuenta una historia y cada bocado es una experiencia.</p>
+      <h2>Nuestra Historia</h2>
+      Delicioso nació del sueño de compartir con el mundo la auténtica cocina argentina. Fundado en 1985
+      por su dueño, nuestro restaurante se ha convertido en un rincón donde se encuentran la tradición y
+      la innovación. Con raíces en la cocina familiar y recetas transmitidas de generación en generación, hemos creado
+      un espacio donde cada plato cuenta una historia y cada bocado es una experiencia.</p>
 
 
-        <section id="promociones">
-          <!-- Contenido de la sección de promociones -->
+    <section id="promociones">
+        <!-- Contenido de la sección de promociones -->
           <h2>Promociones</h2>
+        <div class="carousel-container">
+          <button class="carousel-button prev" onclick="scrollCarousel(-1)">&#10094;</button>
           <div class="carousel">
             <div class="slide" id="slide1">
               <img src="IMAGENES/promocion1.jfif" alt="Promoción 1">
@@ -102,73 +103,73 @@
               </div>
             </div>
           </div>
-          </div>
-        </section>
+          <button class="carousel-button next" onclick="scrollCarousel(1)">&#10095;</button>
+        </div>  
+      </section>
 
-        <section id="carta">
-          <h2>Nuestra Carta</h2>
-          <p>Aquí puedes ver nuestros platos deliciosos.</p>
-          <div class="gallery">
-            <div class="image">
-              <img src="IMAGENES/imagen1.jfif" alt="Plato 1">
-              <div class="overlay">ASADO: Una selección de cortes de carne cocinados a la parrilla, un plato emblemático
-                de Argentina, disfrutado en reuniones sociales.</div>
-            </div>
-            <div class="image">
-              <img src="IMAGENES/imagen2.jfif" alt="Plato 2">
-              <div class="overlay">EMPANADAS: Pequeñas empanadas rellenas de carne, pollo, o verduras, envueltas en masa
-                y
-                horneadas o fritas, un bocado versátil y popular.</div>
-            </div>
-            <div class="image">
-              <img src="IMAGENES/imagen3.jfif" alt="Plato 3">
-              <div class="overlay">
-                MILANESAS: Una rebanada fina de carne empanizada y frita, servida con limón, papas fritas y
-                ensalada, un plato simple pero sabroso.
-              </div>
-            </div>
-            <div class="image">
-              <img src="IMAGENES/imagen4.jfif" alt="Plato 3">
-              <div class="overlay">
-                LOCRO: Un guiso espeso hecho con maíz, carne de cerdo, chorizo, calabaza, papas y
-                legumbres, asociado con celebraciones patrióticas en Argentina, servido caliente y reconfortante.
-              </div>
+      <section id="carta">
+        <h2>Nuestra Carta</h2>
+        <p>Aquí puedes ver nuestros platos deliciosos.</p>
+        <div class="gallery">
+          <div class="image">
+            <img src="IMAGENES/imagen1.jfif" alt="Plato 1">
+            <div class="overlay">ASADO: Una selección de cortes de carne cocinados a la parrilla, un plato emblemático
+              de Argentina, disfrutado en reuniones sociales.</div>
+          </div>
+          <div class="image">
+            <img src="IMAGENES/imagen2.jfif" alt="Plato 2">
+            <div class="overlay">EMPANADAS: Pequeñas empanadas rellenas de carne, pollo, o verduras, envueltas en masa y
+              horneadas o fritas, un bocado versátil y popular.</div>
+          </div>
+          <div class="image">
+            <img src="IMAGENES/imagen3.jfif" alt="Plato 3">
+            <div class="overlay">
+              MILANESAS: Una rebanada fina de carne empanizada y frita, servida con limón, papas fritas y
+              ensalada, un plato simple pero sabroso.
             </div>
           </div>
-        </section>
+          <div class="image">
+            <img src="IMAGENES/imagen4.jfif" alt="Plato 3">
+            <div class="overlay">
+              LOCRO: Un guiso espeso hecho con maíz, carne de cerdo, chorizo, calabaza, papas y
+              legumbres, asociado con celebraciones patrióticas en Argentina, servido caliente y reconfortante.
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="reservas">
-          <h2>Reserva una mesa</h2>
-          <p>Por favor, completa el siguiente formulario para reservar una mesa.</p>
-          <form action="" class="form" method="post" id="form" novalidate>
-            <h2 class="form_title"> ¿Como podemos ayudarte?</h2>
-            <div class="form_container">
-              <div class="form_group">
-                <input type="text" name="" id="name" class="form_input" placeholder=" ">
-                <label for="name" class="form_label"> Nombre</label>
-                <span class="for_line"></span>
-              </div>
+      <section id="reservas">
+        <h2>Reserva una mesa</h2>
+        <p>Por favor, completa el siguiente formulario para reservar una mesa.</p>
+        <form action="" class="form" method="post" id="form" novalidate>
+          <h2 class="form_title"> ¿Como podemos ayudarte?</h2>
+          <div class="form_container">
+            <div class="form_group">
+              <input type="text" name="" id="name" class="form_input" placeholder=" ">
+              <label for="name" class="form_label"> Nombre</label>
+              <span class="for_line"></span>
+            </div>
 
-              <div class="form_group">
-                <input type="email" name="" id="email" class="form_input" placeholder=" ">
-                <label for="email" class="form_label"> Correo Electronico</label>
-                <span class="for_line"></span>
-              </div>
+            <div class="form_group">
+              <input type="email" name="" id="email" class="form_input" placeholder=" ">
+              <label for="email" class="form_label"> Correo Electronico</label>
+              <span class="for_line"></span>
+            </div>
 
-              <div class="form_group">
-                <input type="text" name="" id="message" class="form_input" placeholder=" ">
-                <label for="message" class="form_label"> Mensaje</label>
-                <span class="for_line"></span>
-              </div>
+            <div class="form_group">
+              <input type="text" name="" id="message" class="form_input" placeholder=" ">
+              <label for="message" class="form_label"> Mensaje</label>
+              <span class="for_line"></span>
+            </div>
 
-              <div class="form_group">
-                <input type="text" name="" id="phone" class="form_input" placeholder=" ">
-                <label for="phone" class="form_label"> Telefono</label>
-                <span class="for_line"></span>
-              </div>
+            <div class="form_group">
+              <input type="text" name="" id="phone" class="form_input" placeholder=" ">
+              <label for="phone" class="form_label"> Telefono</label>
+              <span class="for_line"></span>
+            </div>
 
-              <label for="personas">Número de comensales:</label>
-              <select id="personas" name="personas" required>
+            <label for="personas">Número de comensales:</label>
+            <select id="personas" name="personas" required>
                 <option value="">Selecciona...</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -178,40 +179,38 @@
                 <option value="6">6</option>
                 <option value="7">7</option>
                 <option value="8">8</option>
-              </select><br><br>
+            </select><br><br>
 
-              <p>¿Es almuerzo o cena?</p>
-              <input type="radio" id="almuerzo" name="tipo" value="Almuerzo" required>
-              <label for="almuerzo">Almuerzo</label><br>
-              <input type="radio" id="cena" name="tipo" value="Cena" required>
-              <label for="cena">Cena</label><br><br>
+            <p>¿Es almuerzo o cena?</p>
+            <input type="radio" id="almuerzo" name="tipo" value="Almuerzo" required>
+            <label for="almuerzo">Almuerzo</label><br>
+            <input type="radio" id="cena" name="tipo" value="Cena" required>
+            <label for="cena">Cena</label><br><br>
 
-              <label for="fecha">Fecha:</label>
-              <input type="date" id="fecha" name="fecha" required><br><br>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required><br><br>
 
-              <input type="submit" class="form_submit" value="RESERVAR">
-              <p class="warnings" id="warnings"></p>
-          </form>
-        </section>
+            <input type="submit" class="form_submit" value="RESERVAR">
+            <p class="warnings" id="warnings"></p>
+        </form>
+      </section>
 
-        <section id="contacto">
-          <h2>Contáctanos</h2>
-          <p>¡Estamos aquí para ayudarte!</p>
-          <p>Puedes contactarnos en:</p>
-          <p>Teléfono: 123-456-789</p>
-          <p>Email: info@restaurantedelicioso.com</p>
-        </section>
+      <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>¡Estamos aquí para ayudarte!</p>
+        <p>Puedes contactarnos en:</p>
+        <p>Teléfono: 123-456-789</p>
+        <p>Email: info@restaurantedelicioso.com</p>
+      </section>
 
-    </main>
+  </main>
 
-    <footer>
-      <p>&copy; 2024 Restaurante delicioso. Todos los derechos reservados.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2024 Restaurante delicioso. Todos los derechos reservados.</p>
+  </footer>
 
-    <script src="JS/validaciones.js"></script>
-
-
-  </body>
+  <script src="JS/validaciones.js"></script>
+  <script src="JS/script.js"></script>
 
 </body>
 
