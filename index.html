@@ -52,7 +52,7 @@
       por su dueño, nuestro restaurante se ha convertido en un rincón donde se encuentran la tradición y
       la innovación. Con raíces en la cocina familiar y recetas transmitidas de generación en generación, hemos creado
       un espacio donde cada plato cuenta una historia y cada bocado es una experiencia.</p>
-
+    </section>
 
     <section id="promociones">
         <!-- Contenido de la sección de promociones -->
@@ -142,7 +142,6 @@
         <h2>Reserva una mesa</h2>
         <p>Por favor, completa el siguiente formulario para reservar una mesa.</p>
         <form action="" class="form" method="post" id="form" novalidate>
-          <h2 class="form_title"> ¿Como podemos ayudarte?</h2>
           <div class="form_container">
             <div class="form_group">
               <input type="text" name="" id="name" class="form_input" placeholder=" ">
@@ -190,6 +189,11 @@
             <label for="fecha">Fecha:</label>
             <input type="date" id="fecha" name="fecha" required><br><br>
 
+            <label for="imagen">Adjunta una imagen del frente de tu DNI para verificar la reserva al ingresar:</label><br>
+            <input type="file" id="imagen" name="imagen" accept="image/*">
+            <br><br>
+
+
             <input type="submit" class="form_submit" value="RESERVAR">
             <p class="warnings" id="warnings"></p>
         </form>
@@ -197,16 +201,23 @@
 
       <section id="contacto">
         <h2>Contáctanos</h2>
-        <p>¡Estamos aquí para ayudarte!</p>
-        <p>Puedes contactarnos en:</p>
-        <p>Teléfono: 123-456-789</p>
-        <p>Email: info@restaurantedelicioso.com</p>
+        <div class="container_contacto">
+          <div class="div_datos">
+          <h3> ¿Como podemos ayudarte?</h3>
+          <p>Puedes contactarnos en:</p>
+          <p>Teléfono: 123-456-789</p>
+          <p>Email: info@restaurantedelicioso.com</p>
+          <p>O visitarnos en:</p>
+          <p>Av. Pres. Manuel Quintana 570 - CABA</p>
+        </div>
+        <div class="div_iframe"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2889.2212051351544!2d-58.39008019306186!3d-34.58931650544842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssiempreviva%204545%20caba!5e0!3m2!1ses-419!2sar!4v1716868547914!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
       </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2024 Restaurante delicioso. Todos los derechos reservados.</p>
+    <p>&copy; 2024 Restaurante Delicioso. Todos los derechos reservados.</p>
   </footer>
 
   <script src="JS/validaciones.js"></script>
