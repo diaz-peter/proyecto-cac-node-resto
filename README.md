@@ -21,6 +21,8 @@ Proyecto creado con las tecnologias HTML, CSS y Javascript.
 
 <img align="center" title="img2" alt="img2" src="https://github.com/diaz-peter/proyecto-cac-node-resto/blob/main/IMAGENES/img2.png">
 
+<img align="center" title="img3" alt="img3" src="https://github.com/diaz-peter/proyecto-cac-node-resto/blob/main/IMAGENES/img3.png">
+
 <img align="center" title="img4" alt="img4" src="https://github.com/diaz-peter/proyecto-cac-node-resto/blob/main/IMAGENES/img4.png">
 
 <img align="center" title="img5" alt="img5" src="https://github.com/diaz-peter/proyecto-cac-node-resto/blob/main/IMAGENES/img5.png">
