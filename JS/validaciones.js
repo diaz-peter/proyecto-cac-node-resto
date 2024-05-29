@@ -1,6 +1,6 @@
 const nombre = document.getElementById("name");
 const correo = document.getElementById("email");
-const mensaje = document.getElementById("mesagge");
+const mensaje = document.getElementById("message");
 const telefono = document.getElementById("phone");
 const form = document.getElementById("form");
 const parrafo = document.getElementById("warnings");

@@ -21,8 +21,8 @@
         <a href="#"><img src="IMAGENES/logoNombreCompleto.png" alt="Delicioso Resto" /></a>
       </div>
       <div class="div_redes">
-        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=54123456789"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=54123456789" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
       <input type="checkbox" id="side_menu" class="side_menu" />
       <label for="side_menu" class="hamb"><span class="hamb_line"></span></label>
@@ -52,7 +52,7 @@
       por su dueño, nuestro restaurante se ha convertido en un rincón donde se encuentran la tradición y
       la innovación. Con raíces en la cocina familiar y recetas transmitidas de generación en generación, hemos creado
       un espacio donde cada plato cuenta una historia y cada bocado es una experiencia.</p>
-
+    </section>
 
     <section id="promociones">
         <!-- Contenido de la sección de promociones -->
@@ -142,7 +142,6 @@
         <h2>Reserva una mesa</h2>
         <p>Por favor, completa el siguiente formulario para reservar una mesa.</p>
         <form action="" class="form" method="post" id="form" novalidate>
-          <h2 class="form_title"> ¿Como podemos ayudarte?</h2>
           <div class="form_container">
             <div class="form_group">
               <input type="text" name="" id="name" class="form_input" placeholder=" ">
@@ -190,6 +189,11 @@
             <label for="fecha">Fecha:</label>
             <input type="date" id="fecha" name="fecha" required><br><br>
 
+            <label for="imagen">Adjunta una imagen del frente de tu DNI para verificar la reserva al ingresar:</label><br>
+            <input type="file" id="imagen" name="imagen" accept="image/*">
+            <br><br>
+
+
             <input type="submit" class="form_submit" value="RESERVAR">
             <p class="warnings" id="warnings"></p>
         </form>
@@ -197,16 +201,23 @@
 
       <section id="contacto">
         <h2>Contáctanos</h2>
-        <p>¡Estamos aquí para ayudarte!</p>
-        <p>Puedes contactarnos en:</p>
-        <p>Teléfono: 123-456-789</p>
-        <p>Email: info@restaurantedelicioso.com</p>
+        <div class="container_contacto">
+          <div class="div_datos">
+          <h3> ¿Como podemos ayudarte?</h3>
+          <p>Puedes contactarnos en:</p>
+          <p>Teléfono: 123-456-789</p>
+          <p>Email: info@restaurantedelicioso.com</p>
+          <p>O visitarnos en:</p>
+          <p>Av. Pres. Manuel Quintana 570 - CABA</p>
+        </div>
+        <div class="div_iframe"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6379225484357!2d-58.39316522488562!3d-34.58802715666856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa30c27d235%3A0x9d3e6330bfa8a0e!2sAv.%20Pres.%20Manuel%20Quintana%20570%2C%20C1129ABO%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1716872811081!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
       </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2024 Restaurante delicioso. Todos los derechos reservados.</p>
+    <p>&copy; 2024 Restaurante Delicioso. Todos los derechos reservados.</p>
   </footer>
 
   <script src="JS/validaciones.js"></script>
